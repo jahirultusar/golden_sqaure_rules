@@ -1,8 +1,8 @@
 
 ## 1. Describe the Problem
 
-As a user
-So that I can manage my time
+> As a user\
+So that I can manage my time\
 I want to see an estimate of reading time for a text, assuming that I can read 200 words a minute.
 
 ## 2. Design the Function Signature
@@ -19,10 +19,10 @@ def time_estimation(sample):
     """Calculates estimated reading time
 
     Parameters: (list all parameters and their types)
-        mixed_words: a string containing words (e.g. "hello WORLD")
+        mixed_words: a string containing words (e.g. "hello world")
 
     Returns: (state the return value and its type)
-        a list of strings, each one a word (e.g. ["WORLD"])
+        an f"" value (e.g. f"it will take {10} minutes to read this doc")
 
     Side effects: (state any side effects)
         This function doesn't print anything or have any other side-effects
@@ -38,34 +38,34 @@ _Make a list of examples of what the function will take and return._
 # EXAMPLE
 
 """
-Given a lower and an uppercase word
-It returns a list with the uppercase word
+Given an empty string
+It returns 0 min
 """
-extract_uppercase("hello WORLD") => ["WORLD"]
+time_estimation("") => 0 min
 
 """
-Given two uppercase words
-It returns a list with both words
+Given a string 10 words long
+It returns ETR
 """
-extract_uppercase("HELLO WORLD") => ["HELLO", "WORLD"]
+time_estimation("HELLO" x 10) => .05 min
 
 """
-Given two lowercase words
-It returns an empty list
+Given a string 100 words long
+It returns ETR
 """
-extract_uppercase("hello world") => []
+time_estimation("hello" * 100) => .5 min
 
 """
-Given a lower and a mixed case word
-It returns an empty list
+Given a string 200 words long
+It returns ETR
 """
-extract_uppercase("hello WoRLD") => []
+time_estimation("hello ") => []
 
 """
 Given a lowercase word and an uppercase word with an exclamation mark
 It returns a list with the uppercase word, no exclamation mark
 """
-extract_uppercase("hello WORLD!") => ["WORLD"]
+time_estimation("hello WORLD!") => ["WORLD"]
 
 """
 Given an empty string
