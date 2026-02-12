@@ -3,7 +3,7 @@ In this project you will build a personal diary system. You'll start by writing 
 
 Test-drive a function with the following design:
 
-## Design
+## Design Exercise 1
 
 A function called make_snippet that takes a string as an argument and returns the first five words and then a '...' if there are more than that.
 
@@ -15,3 +15,8 @@ You may immediately think "I know how to code that!". Resist that temptation and
 4. Run the test (GREEN).
 5. Refactor if necessary.
 6. Return to step 1 and keep going until your program is complete.
+
+
+## Design Exercise 2
+
+A function called count_words that takes a string as an argument and returns the number of words in that string.
