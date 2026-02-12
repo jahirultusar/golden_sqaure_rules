@@ -9,3 +9,7 @@ def make_snippet(sample):
         return sample
     else:
         return " ".join(splited_word_list) + " ..."
+
+def count_words(words):
+    split_string = words.split()
+    return len(split_string)
